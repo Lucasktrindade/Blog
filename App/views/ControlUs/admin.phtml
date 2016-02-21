@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="page-header">
+            <h1>Área de Login</h1>
+        </div>
+        <?php if(isset($this->view->alerta)){?>
+            <div class="alert alert-danger">
+                <?php echo $this->view->alerta['mensagem'];?>
+            </div>
+        <?php } ?>
+        <div class="col-md-4 col-md-offset-4">
+            <form action="/admin/painel" method="post">
+                <input type="hidden" name="captcha">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" value="" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" class="form-control" id="senha" value="" placeholder="Senha" required>
+                </div>
+                <button type="submit" name="entrar" value="entrar" class="btn btn-default btn-block btn-success">Entrar</button>
+            </form>
+        </div>
+    </div>
+</div>

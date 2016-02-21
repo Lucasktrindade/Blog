@@ -1,0 +1,20 @@
+{
+  "name":"Blog",
+  "require":{"php": ">=5.3"},
+  "minimum-stability":"alpha",
+  "authors":[
+    {
+      "name":"Lucas Trindade",
+      "email":"lucasktrindade@gmail.com"
+    }
+  ],
+  "autoload":{
+    "psr-0":{
+      "Blog":"vendor",
+      "App":"/"
+    }
+  },
+  "config":{
+    "bin-dir":"bin"
+  }
+}
