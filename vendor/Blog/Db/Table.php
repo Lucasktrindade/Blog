@@ -12,7 +12,7 @@ namespace Blog\Db;
 abstract class Table
 {
     protected $db;
-    protected -$table;
+    protected $table;
 
     public function __construct(\PDO $db)
     {
