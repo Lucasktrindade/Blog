@@ -13,6 +13,6 @@ class Usuario
 {
     public function verificaLogin($usuario,$senha)
     {
-        return $usuario.$senha;
+
     }
 }
