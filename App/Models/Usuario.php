@@ -8,14 +8,13 @@
 
 namespace App\Models;
 use Blog\Db\Table;
-use Blog\Session\Session;
 
 class Usuario extends Table
 {
     public function verificaLogin($usuario,$senha)
     {
-        $sessao = new Session();
-        $sessao->Destroy();
-        echo $sessao->SesID();
+        $query = "SELECT $usuario FROM usuarios ";
+
+        return $this->db->query($query);
     }
 }

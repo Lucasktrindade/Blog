@@ -22,17 +22,13 @@ abstract class Bootstrap
     abstract protected function initRoutes();
 
     protected function run($url){
-        if(isset($route['route'])) {
-            echo 'Erro';
-        }else{
-            array_walk($this->routes, function ($route) use ($url) {
-                if ($url == $route['route']) {
-                    $class = "App\\Controllers\\" . ucfirst($route['controller']);
-                    $controller = new $class;
-                    $controller->$route['action']();
-                }
-            });
-        }
+        array_walk($this->routes, function ($route) use ($url) {
+            if ($url == $route['route']) {
+                $class = "App\\Controllers\\" . ucfirst($route['controller']);
+                $controller = new $class;
+                $controller->$route['action']();
+            }
+        });
     }
     protected function setRoutes(array $routes){
         $this->routes=$routes;

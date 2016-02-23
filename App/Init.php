@@ -10,7 +10,8 @@ class Init extends Bootstrap
         $ar['home']=array('route'=>'/','controller'=>'index','action'=>'index');
         $ar['empresa']=array('route'=>'/empresa','controller'=>'index','action'=>'empresa');
         $ar['admin']=array('route'=>'/admin','controller'=>'ControlUs','action'=>'index');
-        $ar['entrar']=array('route'=>'/admin/painel','controller'=>'ControlUs','action'=>'entrar');
+        $ar['dashboard']=array('route'=>'/dashboard','controller'=>'ControlUs','action'=>'entrar');
+        $ar['cadastrar']=array('route'=>'/dashboard/cadastrar','controller'=>'ControlUs','action'=>'cadastrar');
 
         $this->setRoutes($ar);
     }

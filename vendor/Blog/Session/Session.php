@@ -4,7 +4,9 @@ namespace Blog\Session;
 
 class Session
 {
-    public function __construct()
+    public function __construct(){}
+
+    public function SesStart()
     {
         session_start();
     }
