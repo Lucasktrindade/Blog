@@ -19,16 +19,6 @@ class ControlUs extends Action
 
     public function entrar()
     {
-        /*$email = isset($_POST['email']);
-        $senha = isset($_POST['senha']);
-
-        if(($email == FALSE) || ($senha== FALSE) ){
-            $alerta = array('mensagem'=> 'Preencha os campos pedidos !');
-            $this->view->alerta = $alerta;
-            $this->render('admin');
-        }else{
-            $this->render('dashboard');
-        }*/
         $email = isset($_POST['email']);
         $senha = isset($_POST['senha']);
 
