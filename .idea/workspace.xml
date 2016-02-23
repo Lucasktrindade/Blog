@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c182e8b3-8a4c-4e0e-b5fb-0e2f87f60209" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/Blog/Session/Session.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Controllers/ControlUs.php" afterPath="$PROJECT_DIR$/App/Controllers/ControlUs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Models/Usuario.php" afterPath="$PROJECT_DIR$/App/Models/Usuario.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/Blog/Db/Table.php" afterPath="$PROJECT_DIR$/vendor/Blog/Db/Table.php" />
-    </list>
+    <list default="true" id="c182e8b3-8a4c-4e0e-b5fb-0e2f87f60209" name="Default" comment="" />
     <ignored path="Blog.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
